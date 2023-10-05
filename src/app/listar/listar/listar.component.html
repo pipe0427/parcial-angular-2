@@ -1,0 +1,22 @@
+<div class="container p-3">
+    <table class="table">
+        <thead>
+            <th>Titular</th>
+            <th>Número</th>
+            <th>Fecha</th>
+            <th>CVV</th>
+            <th>Editar</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tarjeta of tarjetas">
+                <td>{{tarjeta.titular}}</td>
+                <td>{{tarjeta.numero}}</td>
+                <td>{{tarjeta.fecha}}</td>
+                <td>{{tarjeta.cvv}}</td>
+                <td><a routerLink="/editar" class="btn btn-danger"><i class="fas fa-user-edit"></i></a></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
