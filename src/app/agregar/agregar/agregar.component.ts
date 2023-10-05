@@ -39,7 +39,7 @@ export class AgregarComponent {
       this.extractData()
       this.agregarService.agregar(this.tarjeta).subscribe((res) => {
         console.log(res);
-        this.router.navigateByUrl('dashboard')
+        this.router.navigateByUrl('dashboard/listar')
         SwalUtils.customMessageOk('Agregado','Se agrego correctamente')
       }, (error) => {
         this.router.navigateByUrl('dashboard')

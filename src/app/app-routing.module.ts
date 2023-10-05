@@ -26,7 +26,10 @@ const routes: Routes = [
         path: 'listar',loadChildren: () => import('./listar/listar.module').then(m=>m.ListarModule)
       },
       {
-        path: 'editar',loadChildren: () => import('./listar/listar.module').then(m=>m.ListarModule)
+        path: 'editar',loadChildren: () => import('./editar/editar.module').then(m=>m.EditarModule)
+      },
+      {
+        path:'buscar', loadChildren:() => import('./buscar/buscar.module').then(m=>m.BuscarModule)
       }
 
     ]

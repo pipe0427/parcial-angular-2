@@ -1,1 +1,23 @@
-<p>editar works!</p>
+<div class="container">
+    <form (ngSubmit)="onSubmit()"  [formGroup]="tarjetaForm">
+    <div class="mb-3">
+      <label  class="form-label">Titular</label>
+      <input type="text" class="form-control" placeholder="titular" formControlName = "titular">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Numero</label>
+      <input type="number" class="form-control" placeholder="Numero" formControlName = "numero">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Fecha</label>
+      <input type="date" class="form-control" placeholder="Fecha" formControlName = "fecha">
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">Cvv</label>
+      <input type="number" class="form-control" placeholder="Cvv" formControlName = "cvv">
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Editar</button>
+    </div>
+</form>
+</div>

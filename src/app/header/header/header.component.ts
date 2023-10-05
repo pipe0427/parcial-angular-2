@@ -13,6 +13,6 @@ export class HeaderComponent {
 
   searchAction(searchText:any) {
     console.log(searchText);
-    this.router.navigate(["/dashboard/search/searching", searchText]);
+    this.router.navigate(["/dashboard/buscar/buscando", searchText]);
   }
 }
